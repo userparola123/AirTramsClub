@@ -188,3 +188,6 @@ pre,table,fieldset,hr, img,
   width: 100%;
   margin: 3px;
 }
+strong{
+font-weight: 700;
+}
