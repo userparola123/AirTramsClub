@@ -230,3 +230,6 @@ footer small {
 strong {
   font-weight: 700;
 }
+.right{
+  text-align: end;
+}
