@@ -222,9 +222,6 @@ footer small {
   text-decoration: none;
   color: beige;
   margin: 0 .5rem;
-.hr {
-  border-top: 3px dotted lightblue;
-}
   display: inline-block;
 }
 .footer-nav a:hover {
@@ -233,4 +230,7 @@ footer small {
 }
 strong {
   font-weight: 700;
+}
+.hr {
+  border-top: 3px dotted lightblue;
 }
