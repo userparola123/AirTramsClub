@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta name="description" content="AirTramsClub">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AirTramsClub</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300%7COpen+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="tarom.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+		<h1>AirTramsClub</h1>
+		<p>A mini-site about the latest aviation and tram news</p>
+		<a class="button" href="aboutus.html">About us</a>
+		<a class="button" href="helpus.html">Suport us</a>
+    <a class="button" href="callus.html">Call us</a>
+    <a class="button" href="index.html">Home</a>
+    <a class="button" href="noutati.html">News</a>
+  </header>
+	<main class="primary-content">
+	<article class="post">
+		 <br>
+    <h6>Language:</h6>
+    <nav class="navi">
+    <ul>
+      <li><a href="taromro.html">Ro</a></li>
+      <li><a href="taromeng.html" class="active">Eng</a></li>
+     
+    </ul>
+  </nav>
+		<h2>Tarom pilots anticipate the company's bankruptcy by the end of 2020</h2>
+    <i class="fa fa-clock-o" aria-hidden="true"></i> 3 July 2020
+		<img class="picture" src="TAROM_YR-ASC_3.jpeg.jpeg" alt="Tarom A319">
+		<p>Tarom is in its 12th consecutive year of losses. The company has 1,800 employees and 29 aircraft. The company's pilots see Tarom stagnate in losses for more than 10 years.</p>
+		
+	</article>
+<article class="post">
+		<h2> After bankruptcy </h2>
+		
+		<p>If a concrete recovery program is not implemented, 600 pilots and flight attendants will lose their jobs, along with the 1,200 technical and bureaucratic employees that the Minister of Transport said are related to each other, Mediafax writes.</p>
+		
+	</article>
+	<article class="post">
+		<h2>What Tudor and Andrei say </h2>
+		
+		<p>Tudor is a young man who often flew with Tarom and, like any Romanian, pays monthly taxes from which the state offered the company a restructuring loan of 36.7 million euros. If clear measures are not taken, not all the money in the world could save Tarom from bankruptcy, says Andrei, a 10-year-old Tarom pilot.
+    Since working in the company, he has not caught a single year in which Tarom is not at a loss.</p>
+    <p>"We know the history of the company, we know that in the last 10 years it has not been profitable. Several directors have changed management, none of whom have managed to leave their mark or restructure the company. We have to ask ourselves what will be the solution? A capital injection with money from the budget or an efficient restructuring ", said Tudor, a Tarom client.</p>
+    <p>"In 2004, Tarom had $ 800 million in its accounts, and now we have nothing. As long as you throw money out the window paying some contracts over the value you should pay, your (profit) margin becomes zero ", says Andrei Rusu, a 10-year-old pilot at Tarom.</p>
+    <p>"If you ask me how to relaunch Tarom: first of all it would be a manager with experience in the field of aviation, who should be allowed to cut harmful contracts and be left long enough to carry out his management plan. good end. ”, said the pilot Andrei Rusu.</p>
+		
+	</article>
+<article class="post">
+		<h2>Fleet and losses</h2>
+		
+		<p>The company has 29 aircraft and had the highest occupancy margin at 70%. Tarom estimated losses of over 170 million lei last year.</p>
+		
+	</article>
+ 
+    
+    <footer>
+    <div class="wrapper">
+       <small>©2020, All Rights Reserved</small>
+       <nav class="footer-nav">
+        
+      </nav>
+    </div>
+  </footer>
+  </main>
+</body>
+</html> 
