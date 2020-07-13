@@ -224,7 +224,10 @@ em, i
   font-style: italic;
 }
 /* ==== A SIMPLE TOP NAVIGATION ==== */
-
+ h6{
+    text-align: center;
+    font-family: cursive;
+  }
 .navi {
   font-size: 0px;
 }
@@ -265,7 +268,4 @@ em, i
     border-bottom: none;
     width: 7.5rem;
   }
-  h6{
-    text-align: center;
-    font-family: cursive;
-  }
+ 
