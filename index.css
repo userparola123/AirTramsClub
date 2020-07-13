@@ -191,3 +191,49 @@ pre,table,fieldset,hr, img,
 strong{
 font-weight: 700;
 }
+/* ==== A SIMPLE TOP NAVIGATION ==== */
+h6{
+    text-align: center;
+    font-family: cursive;
+  }
+.navi {
+  font-size: 0px;
+}
+
+.navi ul {
+  background-color: hsla(209, 100%, 50%, .05);
+  text-align: center;
+}
+
+.navi li {
+  font-family: cursive,sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.navi a {
+  text-decoration: none;
+  color: purple;
+  display: block;
+}
+
+.navi a:hover {
+  background-color: lightcyan;
+  transition: background-color .3s ease-in-out;
+}
+
+.navi a.active {
+  background-color: lightblue;
+  color: purple;
+}
+
+@media (min-width: 600px) {
+
+  .navi li {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }
+  
