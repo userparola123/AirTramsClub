@@ -236,4 +236,6 @@ h6{
     border-bottom: none;
     width: 7.5rem;
   }
-  
+  area {
+  display: none;
+}
