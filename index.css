@@ -239,3 +239,6 @@ h6{
   area {
   display: none;
 }
+map {
+  display: inline;
+}
