@@ -238,6 +238,7 @@ span {
 h6{
     text-align: center;
     font-family: cursive;
+    font-size: .75em;
   }
 .navi {
   font-size: 0px;
@@ -279,4 +280,7 @@ h6{
     border-bottom: none;
     width: 7.5rem;
   }
-  
+  em, i 
+{
+  font-style: italic;
+}
