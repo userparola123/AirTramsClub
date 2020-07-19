@@ -60,7 +60,7 @@ table {
 .wrapper{
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 90%;
   transform: translate(-50%, -50%);
   background: skyblue;
   max-width: 550px;
