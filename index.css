@@ -56,6 +56,47 @@ table {
 	background-color: rgba(255, 0, 0, .3);
 }
 */
+
+.wrapper{
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: skyblue;
+  max-width: 550px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .input{
+  width: 85%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.searchbtn{
+  background: blue;
+  width: 10%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.searchbtn .fa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  
+  
+}
 /* ==== BASE STYLES ==== */
 a {
 	color: darkgreen;
