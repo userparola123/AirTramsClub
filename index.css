@@ -181,6 +181,9 @@ pre,table,fieldset,hr, img,
 		position: absolute;
         left: 20.625%;
 	}
+	wrapper{
+		top: 1%;
+	}
 
 }
 /* Article Styles */
