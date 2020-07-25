@@ -48,7 +48,6 @@ table {
 .main-header {
 	background-color: rgba(255, 248, 53, .3);
 }
-
 .primary-content {
 	background-color: rgba(140, 96, 255, .3);
 }
@@ -56,9 +55,57 @@ table {
 	background-color: rgba(255, 0, 0, .3);
 }
 */
-
-
 /* ==== BASE STYLES ==== */
+
+.cover {
+  background: url('747%20Qantas.jpg') no-repeat 85% center/cover;
+  display: table;
+  height: 100vh;
+  width: 100vw;
+}
+
+.todays-news{
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.hero-text-wrapper {
+  display: table-cell;
+  vertical-align: baseline;
+}
+
+.hero-text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: black;
+  
+}
+
+.hero-text h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+}
+.hero-text p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.hero-text data {
+  font-size: 12px;
+  font-family: 'Sora', sans-serif;
+  text-align: left;
+}
+
+.title-cover{
+  color: black;
+}
+
+.title-cover:hover{
+  color: lightslategray;
+  transition: .2s ease all;
+}
+
 a {
 	color: darkgreen;
 	text-decoration: none;
@@ -127,6 +174,21 @@ pre,table,fieldset,hr, img,
 /* Primary Content Wrapper Styles */
 
 @media (min-width: 768px) {
+  .cover {
+		width: 66.6%;
+		width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cover {
+		float: none;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 768px) {
 
 	.primary-content {
 		float: right;
@@ -141,9 +203,6 @@ pre,table,fieldset,hr, img,
 		float: none;
 		position: absolute;
         left: 20.625%;
-	}
-	wrapper{
-		top: 1%;
 	}
 
 }
@@ -233,12 +292,6 @@ h6{
   background-color: lightblue;
   color: purple;
 }
-marquee{
-    font-family: 'News Cycle', sans-serif;
-    font-size: 0.85em;
-    background-color: #ccffb3;
-    color: darkgreen;
-  }
 
 @media (min-width: 600px) {
 
@@ -256,4 +309,9 @@ map {
 h6 { 
 	font-size: .75em;
 }
-
+  marquee{
+    font-family: 'News Cycle', sans-serif;
+    font-size: 0.85em;
+    background-color: #ccffb3;
+    color: darkgreen;
+  }
