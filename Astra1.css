@@ -234,6 +234,20 @@ strong {
 span {
   color: crimson;
 }
+.wp-caption-text {
+    margin: 1rem 0;
+text-align: center;
+	font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+figcaption {
+    color: #A8AAB2;
+}
+	
+	
 /* ==== A SIMPLE TOP NAVIGATION ==== */
 h6{
     text-align: center;
