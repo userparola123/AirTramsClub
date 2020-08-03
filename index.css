@@ -322,6 +322,8 @@ h6 {
 .modal-dialog {
   margin-top: 0rem;
   max-width: 100%;
+	z-index: 1;
+	}
   
   .modal-content {
     border-radius: 0rem;
@@ -332,8 +334,8 @@ h6 {
       margin: 0.2rem;
       background-color: forestgreen;
     }
-  }
-}
+  
+
 cookie-text{
 	font-family: 'Epilogue', sans-serif;
 	}
