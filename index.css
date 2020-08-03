@@ -330,7 +330,10 @@ h6 {
   .buttons {
     .btn {
       margin: 0.2rem;
+      background-color: forestgreen;
     }
   }
 }
-
+cookie-text{
+	font-family: 'Epilogue', sans-serif;
+	}
