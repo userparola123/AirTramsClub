@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <meta name="description" content="AirTramsClub">
   <meta charset="utf-8">
@@ -288,29 +288,16 @@ th {
     
 </tr>
 </table>
-			<div class="container">
-			
-	</script>
-  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#cookieModal">
-    See Cookies
-  </button>  
+			<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+    <strong>Do you like cookies?</strong> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+ 
+    <button type="button" class="btn btn-primary btn-sm acceptcookies">
+        I agree
+    </button>
 </div>
-
-<div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="notice d-flex justify-content-between align-items-center">
-          <div class="cookie-text">Acest website foloseste cookies pentru a personaliza continutul si a analiza traficul pentru a va oferi o experienta mai buna.</div>
-          <div class="buttons d-flex flex-column flex-lg-row">
-            <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal">I accept</a>
-            <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- END Bootstrap-Cookie-Alert -->
+			<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 	</article>
   </main>
 
