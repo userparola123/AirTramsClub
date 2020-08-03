@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Sora&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
   <style>
      .img-responsive{
       width: 100%;
@@ -75,10 +76,12 @@ th {
     <a class="button" href="callusro.html">Contactati-ne</a>
     <a class="button" href="index.html">Pagina Acasa</a>
 	<a class="button" href="noutatiro.html">Noutati</a>
-  </header>
-	<main class="primary-content">
-	<article class="post">
-		<div class="container">
+	<div class="container">
+			<script>
+	$(document).ready(function() {  
+  $('#cookieModal').modal('show');
+});
+	</script>
   <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#cookieModal">
     See Cookies
   </button>  
@@ -89,7 +92,7 @@ th {
     <div class="modal-content">
       <div class="modal-body">
         <div class="notice d-flex justify-content-between align-items-center">
-          <div class="cookie-text">Acest website foloseste cookies pentru a personaliza continutulsi a analiza traficul pentru a va oferi o experienta mai buna.</div>
+          <div class="cookie-text">Acest website foloseste cookies pentru a personaliza continutul si a analiza traficul pentru a va oferi o experienta mai buna.</div>
           <div class="buttons d-flex flex-column flex-lg-row">
             <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal">I accept</a>
             <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal">Learn More</a>
@@ -99,11 +102,11 @@ th {
     </div>
   </div>
 </div>
-		<script>
-	$(document).ready(function() {  
-  $('#cookieModal').modal('show');
-});
-	</script>
+  </header>
+	<main class="primary-content">
+	<article class="post">
+		
+		
 	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
