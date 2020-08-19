@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ td {
+  text-align: left;
+  padding: 8px;
+}
+
+       .table-white{
+         background-color: #fff;
+         font-weight: 500;
+       }
+
+.table-grey {
+  background-color: #ddd;
+  color: #111;
+  font-weight: 600;
+}
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AirTramsClub</title>
+  <link rel="stylesheet" type="text/css" href="news-styles.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300%7COpen+Sans" rel="stylesheet">
+</head>
+<body>
+<section class="header" id="sec">
+  <a href="#" class="logo"><h2>AirTramsClub</h2></a>
+  
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Acasa</a>
+  <a href="aboutus.html">Despre noi</a>
+  <a href="helpus.html">Sprijiniti-ne</a>
+  <a href="callus.html">Contactati-ne</a>
+  <a href="new.html">Noutati</a>
+  <a href="AirTramsTube/airtramstube.html">AirTramsTube</a>
+  <a href="oldsite.html">Site-ul vechi (5 iulie 2020- 11 august 2020)</a> 
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; </button>
+  
+</div>
+  </section>
+  <section class="banner">
+  <img src="images/747-lufthansa-about-planes-page.jpg" class="fitBg">
+    <div class="content">
+    <h2>Sectiunea Despre Diferite Avioane</h2>
+      <p>O sectiune calitativa despre starea diferitor avioane</p>
+   
+     </div> 
+  </section>
+ <section class="destination">
+   
+    <div class="content">
+      <h2 class="titleText-h2">Cele mai noi avioane descrise</h2>
+      <br>
+      <hr>
+      <br><br>
+      <details>
+      <summary class="titleText">F-BVGA- Primul Airbus A300 al Air France</summary>
+        <i class="fa fa-newspaper-o" aria-hidden="true">  2/2</i> <i class="fa fa-clock-o" aria-hidden="true">   17.08.2020</i>
+        <br><br>
+        <!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="custom" data-btn_size="41" data-f_size="10" data-icon_l_c="black" data-icon_d_c="black" data-f_family="Comic Sans MS" data-counter_fs="b" data-lang="ro"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
+      <br><br>
+        <img id="myImg" src="images/first-air-france-a300.jpg" class="img-article">
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+        <br><br>
+        <table class="table">
+  
+  <tr class="table-grey">
+    <td>Numărul de serie al producătorului</td>
+    <td>005</td>
+    
+  </tr>
+  <tr class="table-white">
+    <td>Tipul avionului</td>
+    <td>Airbus A300B2-1C</td>
+    
+  </tr>
+  <tr class="table-grey">
+    <td>Primul zbor</td>
+    <td>15 aprilie 1974</td>
+    
+  </tr>
+  <tr class="table-white">
+    <td>Vârstă</td>
+    <td>23,1 ani</td>
+    
+</tr>
+          <tr class="table-grey">
+    <td>Numar de inregistrare</td>
+    <td>F-WVGA</td>
+    
+  </tr>
+          <tr class="table-white">
+    <td>Loc de producție</td>
+    <td>Toulouse (TLS), Franta</td>
+    
+  </tr>
+          <tr class="table-grey">
+    <td>Starea actuala a avionului</td>
+    <td>Taiat in iunie 1997</td>
+    
+  </tr>
+</table>
+        </details>
+      
+      <br>
+      <br>
+      <hr>
+      <br>
+      
+      </div>
+   
+  </section>
+  <section class="banner3">
+  <img src="images/abandoned-747-about-planes-page.jpg" class="fitBg">
+  </section>
+   <section class="footer">
+  <div class="sci">
+ 
+  <h4 class="copyrightText">Copyright ©2020 <span class="copyright">AirTramsClub</span>. All Rights Reserved.</h4>  
+  </div>
+  </section>
+  <script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+  </script>
+ <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>

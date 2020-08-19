@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AirTramsClub</title>
+  <link rel="stylesheet" type="text/css" href="news-styles.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300%7COpen+Sans" rel="stylesheet">
+</head>
+<body>
+<section class="header" id="sec">
+  <a href="#" class="logo"><h2>AirTramsClub</h2></a>
+  
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Acasa</a>
+  <a href="aboutus.html">Despre noi</a>
+  <a href="helpus.html">Sprijiniti-ne</a>
+  <a href="callus.html">Contactati-ne</a>
+  <a href="new.html">Noutati</a>
+    <a href="AirTramsTube/airtramstube.html">AirTramsTube</a>
+  <a href="oldsite.html">Site-ul vechi (5 iulie 2020- 11 august 2020)</a> 
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; </button>
+  
+</div>
+  </section>
+  <section class="banner">
+  <img src="images/newspaper-main-image-termeni.jpg" class="fitBg">
+    <div class="content">
+    <h2>Sectiunea Termeni de utilizare</h2>
+   
+     </div> 
+  </section>
+ <section class="destination">
+   
+    <div class="content">
+      
+      <h2 class="titleText">Termeni de utilizare</h2>
+      <p class="text">Pentru ca e obligatoriu sa existe si un set de reguli, iata care sunt acestea:</p>  
+      <p class="text">– Toate drepturile rezervate. Acesta este un website personal iar preluarea oricarui material publicat pe acest site (incluzând, dar fără a se limita la articole, informaţii, fotografii, date – numite generic conţinut), în scop comercial sau necomercial, se va face doar cu acordul explicit al redactiei.</p>
+      <p class="text">– Conţinutul acestui site este protejat de legea nr. 8/1996, privind dreptul de autor şi drepturile conexe, cu modificările şi completările ulterioare, precum şi de dispoziţiile privitoare la copyright aplicabile în alte teritorii decât România. Lipsa menţiunii privind unele texte legale sau dispoziţii nu duc la inaplicabilitatea acestora.</p>
+      <br>
+      <br>
+      <hr>
+      <br>
+      
+      </div>
+   
+  </section>
+  <section class="banner3">
+  <img src="images/books-termeni-page-footer.jpg" class="fitBg">
+  </section>
+   <section class="footer">
+  <div class="sci">
+ 
+  <h4 class="copyrightText">Copyright ©2020 <span class="copyright">AirTramsClub</span>. All Rights Reserved.</h4>
+    <h4 class="copyrightText"><a href="termeni.html">Termeni de utilizare</a></h4>
+  </div>
+  </section>
+  <script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+    var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+  </script>
+ <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
