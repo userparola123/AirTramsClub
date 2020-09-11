@@ -123,6 +123,8 @@ section{
   width: 100%;
   height: 100%;
   object-fit: cover;
+object-position-x: center;
+object-position-y: center;
   opacity: 0.8;
 }
 
