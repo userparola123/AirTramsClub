@@ -17,6 +17,10 @@ section{
   
 }
 
+.fa-ie-11{
+	display: none;
+}
+
 .header{
   position: absolute;
   top: 0;
@@ -511,4 +515,8 @@ a{
 
 .fa{
   color: #fff;
+	display: inline-block;
+	
 }
+
+
