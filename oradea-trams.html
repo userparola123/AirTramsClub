@@ -1,42 +1,11 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 <head>
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="news-styles.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300%7COpen+Sans" rel="stylesheet">
   <title>AirTramsClub</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-55ZM135WLY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-55ZM135WLY');
-</script>    
-	<script type="text/javascript">
-	$(document).ready(function() {  
-  $('#cookieModal').modal('show');
-	});
-		</script>
 </head>
 <body>
 <section class="header" id="sec">
@@ -59,118 +28,1061 @@
 </div>
   </section>
   <section class="banner">
-  
-  <img src="images/main-image.jpg" class="fitBg">
+  <img src="images/bot-afisaj-4r-nufarul.jpg" class="fitBg">
     <div class="content">
-    <br>
-    <h2>AirTramsClub</h2>
-     <br><br><br><br><br><br><br>
-      <p>Un mini-site despre cele mai noi stiri ale aviatiei si ale tramvaielor</p>
-   <br><br>
+    <h2>Sectiunea "Toata Romania aici! -- Oradea"</h2>
+      <p>O sectiune dedicata tuturor tramvaielor din Oradea</p>
+   
      </div> 
   </section>
-  
-  
-    
-    <section class="destination">
-    <div class="content">
-      <h2 class="titleText">Sectiuni de stiri</h2>
-      <p class="text">Mai jos avem trei sectiuni mari despre tramvaie din Romania, avioane si producatori de avioane, in care cel putin la o zi apare o stire noua intr-una din sectiuni, sau la mai multe chiar. Cum spuneam si mai sus, AirTramsClub va ofera stiri de calitate, cu explicatii si videoclipuri, de actualitate si interesante.</p>
-      </div>
-      <div class="destinationList">
-      <div class="box">
-      <div class="imgBx">
-      <img src="images/alaska-737-main-page.jpg" class="fitBg">
-      </div>
-        
-      <div class="content">
-        <a href="plane-main-section.html" class="a-images">
-        <h2>Avioane</h2>
-        </a>
-        </div>
-        </div>
-        <div class="box">
-      <div class="imgBx">
-      <img src="images/ulf-in-piata-unirii.jpg" class="fitBg">
-      </div>  
-      <div class="content">
-        <a href="trams-section.html" class="a-images">
-        <h2>Tramvaie din Romania</h2>
-        </a>
-        </div>
-        </div>
-        <div class="box">
-      <div class="imgBx">
-      <img src="images/main-page-a320.jpg" class="fitBg">
-      </div>  
-      <div class="content">
-        <a href="history-section.html" class="a-images">
-        <h2>Istorie</h2>
-        </a>
-   
-        </div>
-        </div>
-        
-      </div>
-      <br><br><br><br>
-           <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Mai multe sectiuni</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="analysis-section.html">Analiza</a>
-    <a href="failed-models-section.html">Modele esuate</a>
-    <a href="prezentari-section.html">Prezentari</a>
+ <section class="destination">
+   <p class="text">ALTE SECTIUNI DE PE PAGINA:</p>
+  <a href="#future-trams" class="btn table-tramvaie-a">Tramvaie in curs de livrare</a>
+   <a href="#historic-trams" class="btn table-tramvaie-a">Tramvaie istorice</a>
+   <br><br>
+    <div class="content" id="table-tramvaie">
+   <table>
+  <caption>Tramvaie actuale</caption>
+  <thead>
+    <tr>
+      <th scope="col">Tip tramvai</th>
+      <th scope="col">Numar de parc</th>
+      <th scope="col">Stare</th>
+      <th scope="col">Livrat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Tip tramvai"><button id="myBtn"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/bot-afisaj-4r-nufarul.jpg" class="image-modal">
   </div>
-</div>
-    <br><br><br>
-     <section class="banner2">
-    <img src="images/main-image%20(3).jpg" class="fitBg">
-    </section>
-     <br>
-      <section class="about">
-  <div class="contentBx">
-   <h2 class="titleText">Lista cu toate tramvaiele Romaniei, pe orase</h2> 
-    <p class="text">Dand click pe butonul de mai jos veti avea o lista intreaga cu toate orasele Romaniei. Cand veti da click pe un anumit oras, veti putea vedea o pagina cu o lista mare de tramvaie. Deocamdata doar orasul Oradea este finalizat, in lucru fiind acum Clujul.</p>
-    <a href="trams-shape.html" class="btn">Vezi orasele!</a>
-    </div>
-    <div class="imgBx">
-    <img src="images/777x-main-page.jpg" class="fitBg">
-    </div>
-  </section>
+
+</div>     Astra Imperio-BH</td>
+      <td data-label="Numar de parc">301</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">05.05.2020</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn1"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/astra-imperio-302-tramvaie-din-romania.jpg" class="image-modal">
+  </div>
+
+</div> Astra Imperio-BH</td>
+      <td data-label="Numar de parc">302</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">14.05.2020</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn2"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/astra-imperio-303-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Sursa foto: Skyscrapercity</p>
+  </div>
+
+</div>   Astra Imperio-BH</td>
+      <td data-label="Numar de parc">303</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">26.05.2020</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn3"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/astra-imperio-304-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Oradea-Nagyvarad Tram-Fan - Home | Facebook</p>
+  </div>
+
+</div> Astra Imperio-BH</td>
+      <td data-label="Numar de parc">304</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">04.06.2020</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn4"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal4" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/astra-imperio-305-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Oradea Nagyvarad Tram Fan / Facebook</p>
+  </div>
+
+</div> Astra Imperio-BH</td>
+      <td data-label="Numar de parc">305</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">24.08.2020</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn15"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal15" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/astra-imperio-306-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Bihoreanul</p>
+  </div>
+
+</div> Astra Imperio-BH</td>
+      <td data-label="Numar de parc">306</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">31.08.2020</td>
+    </tr>
+     <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn5"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal5" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-50-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Google</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">50</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">16.04.2008</td>
+    </tr>
+     <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn6"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal6" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-51-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Google</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">51</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">07.05.2008</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn7"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal7" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-52-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Google</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">52</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">27.05.2008</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn8"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal8" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-53-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Google</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">53</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">27.11.2008</td>
+    </tr>
+     <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn9"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal9" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-54-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Tramclub</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">54</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">12.12.2008</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn10"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal10" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-55-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: MetrouUsor</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">55</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">21.01.2009</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn11"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal11" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-56-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Tramclub</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">56</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">04.02.2009</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn12"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal12" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-57-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Tramclub/ @tcm</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">57</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">19.02.2009</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn13"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal13" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-58-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Oradea-Nagyvarad Tram-Fan - Home | Facebook</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">58</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">11.03.2009</td>
+    </tr>
+     <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn14"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal14" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/siemens-ulf-59-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Tramclub/ @tcm</p>
+  </div>
+
+</div> Siemens ULF A1</td>
+      <td data-label="Numar de parc">59</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">24.03.2009</td>
+    </tr>
+    
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn16"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal16" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-200-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Oradea Nagyvarad Tram Fan / Facebook</p>
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">200</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2017</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn17"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal17" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-201-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">201</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2017</td>
+    </tr>
+     <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn18"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal18" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-202-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">202</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2017</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn19"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal19" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-203-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">203</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1985 - Oradea: 2017</td>
+    </tr>
+      <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn20"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal20" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-204-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">204</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1980 - Oradea: 2018</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn21"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal21" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-205-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">205</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1984 - Oradea: 2018</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn22"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal22" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-206-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">206</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2017</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn23"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal23" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-207-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">207</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1981 - Oradea: 2017</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn24"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal24" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-208-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">208</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn25"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal25" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-209-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">209</td>
+      <td data-label="Stare">Retras temporar din cauza unor defectiuni</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+     <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn26"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal26" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-210-tramvaie-din-romania.jpg" class="image-modal">
+    
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">210</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1984 - Oradea: 2018</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn27"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal27" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-211-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: Attila Zsiros</p>
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">211</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Tip tramvai"><button id="myBtn28"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal28" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-212-tramvaie-din-romania.jpg" class="image-modal">
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">212</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn29"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal29" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-213-tramvaie-din-romania.jpg" class="image-modal">
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">213</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1980 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn30"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal30" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-214-tramvaie-din-romania.jpg" class="image-modal">
+    <p>Foto: MetrouUsor / Victor Silaghi</p>
+  </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">214</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+     <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn31"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal31" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-215-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">215</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1984 - Oradea: 2017</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn32"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal32" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-216-tramvaie-din-romania.jpg" class="image-modal">
+     <p>Foto: MetrouUsor</p>
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">216</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1984 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn33"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal33" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-217-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">217</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1983 - Oradea: 2018</td>
+    </tr>
+     <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn34"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal34" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-218-tramvaie-din-romanai.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">218</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2017</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn35"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal35" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-219-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">219</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn36"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal36" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-220-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">220</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1985 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn37"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal37" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-221-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">221</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+     <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn38"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal38" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-222-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">222</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1980 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn39"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal39" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-223-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">223</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn40"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal40" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-224-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">224</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2017</td>
+    </tr>
+  <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn41"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal41" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-225-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">225</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1980 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn42"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal42" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-226-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">226</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn43"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal43" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-227-tramvaie-din-romania.jpg" class="image-modal">
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">227</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1982 - Oradea: 2017</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn44"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal44" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-228-tramvaie-din-romania.jpg" class="image-modal">
+     <p>Foto: MetrouUsor</p>
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">228</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1986 - Oradea: 2018</td>
+    </tr>
+    <tr>
+    <td scope="row" data-label="Tip tramvai"><button id="myBtn45"><i class="fa fa-camera" id="icon-trams-list" aria-hidden="true"></i></button>
+
+<!-- The Modal -->
+<div id="myModal45" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/tatra-kt4dm-229-tramvaie-din-romania.jpg" class="image-modal">
+     <p>Foto: MetrouUsor</p>
+      </div>
+
+</div> Tatra KT4DM</td>
+      <td data-label="Numar de parc">229</td>
+      <td data-label="Stare">Activ</td>
+      <td data-label="Livrat">Berlin: 1983 - Oradea: 2018</td>
+    </tr>
+  </tbody>
+</table>
       
-      </section>
+      </div>
+   <a href="#" id="future-trams" class="btn table-tramvaie-a">Tramvaie in curs de livrare</a>
+   
+  <br><br>
   
-  <section class="banner3">
-  <img src="images/kt4dm-205-end-main-page.jpg" class="fitBg">
+  <div class="content" id="table-tramvaie">
+   <table>
+  <caption>Tramvaie in curs de livrare</caption>
+  <thead>
+    <tr>
+      <th scope="col">Tip tramvai</th>
+      <th scope="col">Viitor numar de parc</th>
+      <th scope="col">Stare</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">307</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">308</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">309</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">310</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">311</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">312</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">313</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">314</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">315</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">316</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">317</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">318</td>
+      <td data-label="Stare">In fabricatie</td>
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">319</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+    <tr>
+      <td data-label="Tip tramvai">
+           Astra Imperio-BH</td>
+      <td data-label="Viitor numar de parc">320</td>
+      <td data-label="Stare">In fabricatie</td>
+      
+    </tr>
+     </tbody>
+    </table>
+   </div>
+   
+   <a href="#" id="historic-trams" class="btn table-tramvaie-a">Tramvaie istorice (incepand cu anul 2018) </a>
+   
+  <br><br>
+  
+  <p class="text">In lucru</p>
+  
   </section>
-  <section class="footer">
+  
+   <section class="footer">
   <div class="sci">
  
-  <h4 class="copyrightText">Copyright ©2020 <mark class="copyright">AirTramsClub</mark>. All Rights Reserved.</h4>  
+  <h4 class="copyrightText">Copyright ©2020 <span class="copyright">AirTramsClub</span>. All Rights Reserved.</h4>  
   </div>
   </section>
-  <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+
+
+<script>
+function initializeModal(modalID, buttonID) {
+  // Get the modal element
+  var modal = document.getElementById(modalID);
+
+  // Get the button that opens the modal
+  var btn = document.getElementById(buttonID);
+
+  // Get the <span> element that closes the modal
+  var span = modal.querySelector('.close');
+
+  // When the user clicks on the button, open the modal
+  btn.addEventListener('click', function() {
+    modal.style.display = "block";
+  });
+
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener('click', function() {
+    modal.style.display = "none";
+  });
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.addEventListener('click', function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
     }
-  }
+  });
 }
-</script>
 
- <script>
+window.addEventListener('load', function() {
+  initializeModal('myModal', 'myBtn');
+  initializeModal('myModal1', 'myBtn1');
+  initializeModal('myModal2', 'myBtn2');
+  initializeModal('myModal3', 'myBtn3');
+   initializeModal('myModal4', 'myBtn4');
+    initializeModal('myModal5', 'myBtn5');
+     initializeModal('myModal6', 'myBtn6');
+  initializeModal('myModal7', 'myBtn7');
+    initializeModal('myModal8', 'myBtn8');
+  initializeModal('myModal9', 'myBtn9');
+   initializeModal('myModal10', 'myBtn10');
+   initializeModal('myModal11', 'myBtn11');
+  initializeModal('myModal12', 'myBtn12');
+  initializeModal('myModal13', 'myBtn13');
+  initializeModal('myModal14', 'myBtn14');
+  initializeModal('myModal15', 'myBtn15');
+  initializeModal('myModal16', 'myBtn16');
+  initializeModal('myModal17', 'myBtn17');
+  initializeModal('myModal18', 'myBtn18');
+  initializeModal('myModal19', 'myBtn19');
+  initializeModal('myModal20', 'myBtn20');
+  initializeModal('myModal21', 'myBtn21');
+  initializeModal('myModal22', 'myBtn22');
+  initializeModal('myModal23', 'myBtn23');
+  initializeModal('myModal24', 'myBtn24');
+  initializeModal('myModal25', 'myBtn25');
+  initializeModal('myModal26', 'myBtn26');
+  initializeModal('myModal27', 'myBtn27');
+  initializeModal('myModal28', 'myBtn28');
+  initializeModal('myModal29', 'myBtn29');
+  initializeModal('myModal30', 'myBtn30');
+  initializeModal('myModal31', 'myBtn31');
+  initializeModal('myModal32', 'myBtn32');
+  initializeModal('myModal33', 'myBtn33');
+  initializeModal('myModal33', 'myBtn33');
+  initializeModal('myModal34', 'myBtn34');
+  initializeModal('myModal35', 'myBtn35');
+  initializeModal('myModal36', 'myBtn36');
+  initializeModal('myModal37', 'myBtn37');
+  initializeModal('myModal38', 'myBtn38');
+  initializeModal('myModal39', 'myBtn39');
+  initializeModal('myModal40', 'myBtn40');
+  initializeModal('myModal41', 'myBtn41');
+  initializeModal('myModal42', 'myBtn42');
+  initializeModal('myModal43', 'myBtn43');
+  initializeModal('myModal44', 'myBtn44');
+  initializeModal('myModal45', 'myBtn45');
+});
+</script>
+<script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
@@ -183,3 +1095,4 @@ function closeNav() {
 </script>
 </body>
 </html>
+
