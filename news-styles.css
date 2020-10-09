@@ -130,7 +130,7 @@ h3 {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: transparent; /* Black*/
+  background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -164,7 +164,7 @@ h3 {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: transparent;
   color: white;
   padding: 10px 15px;
   border: none;
