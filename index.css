@@ -232,9 +232,10 @@ img {vertical-align: middle;}
 
 /* The button used to open the sidebar */
 .openbtn {
+  position: sticky;
   font-size: 20px;
   cursor: pointer;
-  background-color: transparent;
+  background-color: #98fb98;
   color: white;
   padding: 10px 15px;
   border: none;
