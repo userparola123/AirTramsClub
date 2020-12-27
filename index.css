@@ -301,12 +301,14 @@ img {vertical-align: middle;}
 }
 
 .btn{
-  position: relative;
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 30px;
-  background: #fff;
-  text-decoration: none;
+     position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    background: #fff;
+    text-decoration: none;
+    color: cadetblue;
+    border-radius: 7px;
 }
 
 .fitBg{
